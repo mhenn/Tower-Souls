@@ -3,15 +3,11 @@
 
 int main()
 {
-
-	//Stage *stage = new Stage(grid);
+	SetConsoleDisplayMode(GetStdHandle(STD_OUTPUT_HANDLE), CONSOLE_FULLSCREEN_MODE, 0);
 	Player *p = new Player();
-	//std::vector<Stage*> st = { stage };
 	XML *x = new XML();
 	Tower tower = x->load();
-	//Tower *t = new Tower();
 	Game *g = new Game(p, tower);
-
 	g->play();
 	
 	return 0;

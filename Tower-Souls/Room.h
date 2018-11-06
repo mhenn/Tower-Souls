@@ -32,7 +32,11 @@ public:
 	bool getFog() { return this->fog; }
 	void setStart(bool s) { this->start = s; }
 	bool getStart() { return this->start; }
-	void setContainsPlayer(bool p) { this->containsPlayer = p; }
+	void setContainsPlayer(bool p) { 
+		this->containsPlayer = p; 
+		if(p)
+			setRoomContent("P"); 
+	}
 	bool getContainsPlayer() { return this->containsPlayer; }
 	void setContainsMonster(bool m) { this->containsMonster = m; }
 	bool getContainsMonster() { return this->containsMonster; }
@@ -48,6 +52,8 @@ public:
 	Monster* getMonster() { return this->monster; }
 	void setItem(Item *i) { this->item = i; }
 	Item *getItem() { return this->item; }
+	void setRoomContent(std::string content) { this->roomContent = content; }
+	std::string getRoomContent() { return this->roomContent; }
 
 	void operator =(Room* r) {
 		north = r->getNorth();

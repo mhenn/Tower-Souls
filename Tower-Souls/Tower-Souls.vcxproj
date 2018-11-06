@@ -121,7 +121,10 @@
     <ClCompile Include="XML.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AttributeBar.h" />
+    <ClInclude Include="EventWindow.h" />
     <ClInclude Include="Item.h" />
+    <ClInclude Include="Legend.h" />
     <ClInclude Include="Logic.h" />
     <ClInclude Include="Map.h" />
     <ClInclude Include="Monster.h" />
@@ -131,6 +134,7 @@
     <ClInclude Include="Stage.h" />
     <ClInclude Include="tinyxml2.h" />
     <ClInclude Include="Tower.h" />
+    <ClInclude Include="View.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
