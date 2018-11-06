@@ -1,7 +1,7 @@
 <tower>
 	<story>
-		<begin></begin>
-		<end></end>
+		<begin>ASDF</begin>
+		<end>ASD</end>
 	</story>
 	<stages>
 		<stage>
@@ -2245,7 +2245,7 @@
 						<start>false</start>
 						<containsPlayer>false</containsPlayer>
 						<containsMonster>false</containsMonster>
-						<containsItem>true</containsItem>
+						<containsItem>false</containsItem>
 						<containsHole>false</containsHole>
 						<containsSaveSpot>false</containsSaveSpot>
 						<containsStairs>false</containsStairs>
@@ -2305,7 +2305,7 @@
 						<start>false</start>
 						<containsPlayer>false</containsPlayer>
 						<containsMonster>false</containsMonster>
-						<containsItem>true</containsItem>
+						<containsItem>false</containsItem>
 						<containsHole>false</containsHole>
 						<containsSaveSpot>false</containsSaveSpot>
 						<containsStairs>false</containsStairs>
@@ -4712,7 +4712,7 @@
 						<start>false</start>
 						<containsPlayer>false</containsPlayer>
 						<containsMonster>false</containsMonster>
-						<containsItem>true</containsItem>
+						<containsItem>false</containsItem>
 						<containsHole>false</containsHole>
 						<containsSaveSpot>false</containsSaveSpot>
 						<containsStairs>false</containsStairs>
@@ -13144,7 +13144,7 @@
 						<start>false</start>
 						<containsPlayer>false</containsPlayer>
 						<containsMonster>false</containsMonster>
-						<containsItem>true</containsItem>
+						<containsItem>false</containsItem>
 						<containsHole>false</containsHole>
 						<containsSaveSpot>false</containsSaveSpot>
 						<containsStairs>false</containsStairs>
@@ -14438,7 +14438,7 @@
 						<start>false</start>
 						<containsPlayer>false</containsPlayer>
 						<containsMonster>false</containsMonster>
-						<containsItem>true</containsItem>
+						<containsItem>false</containsItem>
 						<containsHole>false</containsHole>
 						<containsSaveSpot>false</containsSaveSpot>
 						<containsStairs>false</containsStairs>
