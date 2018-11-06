@@ -115,6 +115,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Game.h" />
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="tinyxml2.cpp" />
+    <ClCompile Include="XML.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AttributeBar.h" />
+    <ClInclude Include="EventWindow.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="Legend.h" />
+    <ClInclude Include="Logic.h" />
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="Monster.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Point.h" />
+    <ClInclude Include="Room.h" />
+    <ClInclude Include="Stage.h" />
+    <ClInclude Include="tinyxml2.h" />
+    <ClInclude Include="Tower.h" />
+    <ClInclude Include="View.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

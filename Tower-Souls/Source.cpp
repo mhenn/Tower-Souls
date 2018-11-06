@@ -1,15 +1,14 @@
 #include "Game.h"
+#include "XML.h"
 
 int main()
 {
-
-	/*Stage *stage = new Stage(grid);
+	SetConsoleDisplayMode(GetStdHandle(STD_OUTPUT_HANDLE), CONSOLE_FULLSCREEN_MODE, 0);
 	Player *p = new Player();
-	std::vector<Stage*> st = { stage };
-	Tower *t = new Tower(st);
-	Game *g = new Game(p, t);
-
+	XML *x = new XML();
+	Tower tower = x->load();
+	Game *g = new Game(p, tower);
 	g->play();
-	*/
+	
 	return 0;
 }

@@ -1,6 +1,7 @@
 #pragma once
 #include <vector>
 #include "Room.h"
+#include <windows.h>
 
 class Map {
 private:
@@ -30,7 +31,7 @@ private:
 			return;
 		}
 
-		if (!lastInRow && !grid[y][x + 1]->getFog()) {
+		if (!lastInRow && !grid[y][x ]->getFog()) {
 			if (!current->getEast())
 				std::cout << "|";
 			else
@@ -77,6 +78,7 @@ private:
 
 	}
 
+
 	void drawMap() {
 		int start = 0;
 		for (int y = 0; y < grid.size(); y++) {
@@ -103,11 +105,13 @@ private:
 			}
 		}
 	}
+
 public:
 
-	Map(std::vector<std::vector<Room*>> newGrid) : grid(newGrid) {}
-	void draw() {
-		system("cls");
+	Map(std::vector<std::vector<Room*>> newGrid) : grid(newGrid) { }
+
+
+	void draw() {				
 		drawMap();
 	}
 };

@@ -1,28 +1,28 @@
 #pragma once
-
 #include "Player.h"
 #include "Tower.h"
-#include "Map.h"
+
 #include "Logic.h"
+#include "View.h"
 
 class Game {
 private:
 	Player * player;
-	Tower *tower;
+	Tower tower;
 	Stage *currentStage;
-	Map *map;
+	View *view;
 
 	void drawGrid() {
-		map->draw();
+		view->draw();
 	}
 
 public:
-	Game(Player *p, Tower *t) :player(p), tower(t) {
-		this->currentStage = t->getStage(t->getCurrentStage());
-		this->map = new Map(currentStage->getGrid());
+	Game(Player *p, Tower t) :player(p), tower(t) {
+		this->currentStage = t.getStage(t.getCurrentStage());
+		this->view = new View(currentStage->getGrid(), player, t.getCurrentStage());
 	}
 
-	void play() {
+	void play() {		
 		boolean draw = true;
 		Point start = currentStage->getStartPosition();
 		Logic *l = new Logic(start, currentStage);
@@ -36,8 +36,4 @@ public:
 			l->move();
 		}
 	}
-
-
-
-
 };
