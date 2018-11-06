@@ -1,5 +1,4 @@
 #pragma once
-
 #include "Player.h"
 #include "Tower.h"
 #include "Map.h"
@@ -8,7 +7,7 @@
 class Game {
 private:
 	Player * player;
-	Tower *tower;
+	Tower tower;
 	Stage *currentStage;
 	Map *map;
 
@@ -17,8 +16,8 @@ private:
 	}
 
 public:
-	Game(Player *p, Tower *t) :player(p), tower(t) {
-		this->currentStage = t->getStage(t->getCurrentStage());
+	Game(Player *p, Tower t) :player(p), tower(t) {
+		this->currentStage = t.getStage(t.getCurrentStage());
 		this->map = new Map(currentStage->getGrid());
 	}
 
