@@ -136,6 +136,10 @@
     <ClInclude Include="Tower.h" />
     <ClInclude Include="View.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\Level.xml" />
+    <Xml Include="Level1.xml" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
