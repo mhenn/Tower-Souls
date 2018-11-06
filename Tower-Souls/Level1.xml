@@ -1,11 +1,11 @@
 <tower>
 	<story>
-		<begin></begin>
-		<end></end>
+		<begin>Start</begin>
+		<end>Ende</end>
 	</story>
 	<stages>
 		<stage>
-			<story></story>
+			<story>Story</story>
 			<rooms>
 				<row>
 					<room>

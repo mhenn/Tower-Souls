@@ -29,14 +29,18 @@ private:
 
 	Stage* loadStage(tinyxml2::XMLNode *stage) {
 
+		std::cout << "loadStage" << std::endl;
+
 		tinyxml2::XMLElement* rooms = stage->FirstChildElement("rooms");
 		Stage *st = new Stage();
 
-		tinyxml2::XMLNode* room = rooms->FirstChildElement("room");
+		tinyxml2::XMLNode* reihe = rooms->FirstChildElement("row");
 
 
-		for (int y = 0; y < 15; y++) {
+		//for (int y = 0; y < 15; y++) {
+		while (reihe != nullptr) {
 			std::vector<Room*> row;
+			tinyxml2::XMLNode* room = reihe->FirstChildElement("room");
 			for (int x = 0; x < 35; x++) {
 				Room *r = new Room();
 				r->setNorth(room->FirstChildElement("north")->GetText());
@@ -71,6 +75,7 @@ private:
 
 			}
 			st->pushRow(row);
+			reihe = reihe->NextSibling();
 		}
 		return st;
 	}
