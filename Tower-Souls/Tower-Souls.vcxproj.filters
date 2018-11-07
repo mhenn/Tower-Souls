@@ -68,9 +68,6 @@
     <ClInclude Include="EventWindow.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Legend.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Xml Include="..\Level.xml">

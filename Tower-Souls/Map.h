@@ -31,7 +31,7 @@ private:
 			return;
 		}
 
-		if (!lastInRow && !grid[y][x ]->getFog()) {
+		if (!grid[y][x ]->getFog() || !lastInRow && !grid[y][x+1]->getFog()) {
 			if (!current->getEast())
 				std::cout << "|";
 			else
