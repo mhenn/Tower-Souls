@@ -102,10 +102,11 @@ public:
 		if (bottom)
 			std::cout << "---";
 		else {
-			if (this->south && !this->fog || this->fog && below && below->fog)
-				std::cout << "   ";
-			else
+			//if (this->south && !this->fog || this->fog && below && below->fog)
+			if(!this->fog && !this->south || below && !below->fog && !below->getNorth())
 				std::cout << "---";
+			else
+				std::cout << "   ";
 		}
 	}
 
