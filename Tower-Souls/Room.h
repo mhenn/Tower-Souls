@@ -99,14 +99,10 @@ public:
 	}
 
 	void drawBottom(bool bottom, Room *below) {
-		if (bottom)
+		if (bottom || !this->fog && !this->south || below && !below->fog && !below->getNorth())
 			std::cout << "---";
-		else {
-			if (this->south && !this->fog || this->fog && below && below->fog)
-				std::cout << "   ";
-			else
-				std::cout << "---";
-		}
+		else 
+			std::cout << "   ";		
 	}
 
 };

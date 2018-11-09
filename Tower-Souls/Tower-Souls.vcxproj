@@ -124,7 +124,6 @@
     <ClInclude Include="AttributeBar.h" />
     <ClInclude Include="EventWindow.h" />
     <ClInclude Include="Item.h" />
-    <ClInclude Include="Legend.h" />
     <ClInclude Include="Logic.h" />
     <ClInclude Include="Map.h" />
     <ClInclude Include="Monster.h" />

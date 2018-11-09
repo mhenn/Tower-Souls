@@ -13,9 +13,9 @@
 						<east>true</east>
 						<south>false</south>
 						<west>false</west>
-						<fog>true</fog>
+						<fog>false</fog>
 						<start>true</start>
-						<containsPlayer>false</containsPlayer>
+						<containsPlayer>true</containsPlayer>
 						<containsMonster>false</containsMonster>
 						<containsItem>false</containsItem>
 						<containsHole>false</containsHole>

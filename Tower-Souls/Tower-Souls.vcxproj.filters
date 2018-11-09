@@ -13,6 +13,15 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{8545f805-6b8f-4ea0-8d42-5c03247ec3d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{729f5eb2-c1cd-4f62-bd61-f0673e536306}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tower">
+      <UniqueIdentifier>{d5c8b47a-45ad-4d78-abc1-688a13f253fb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -66,9 +75,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="EventWindow.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Legend.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

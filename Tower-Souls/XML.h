@@ -40,7 +40,7 @@ private:
 			tinyxml2::XMLNode* room = xmlRow->FirstChildElement("room");
 			while(room) {
 				Room *r = new Room();
-				r->setNorth(room->FirstChildElement("north")->GetText());
+				r->setNorth(textToBool(room->FirstChildElement("north")->GetText()));
 				r->setSouth(textToBool(room->FirstChildElement("south")->GetText()));
 				r->setEast(textToBool(room->FirstChildElement("east")->GetText()));
 				r->setWest(textToBool(room->FirstChildElement("west")->GetText()));
